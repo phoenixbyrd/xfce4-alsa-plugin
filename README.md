@@ -17,8 +17,7 @@ Simple ALSA volume control for xfce4-panel
 
 ### Building
 ```sh
-# meson build -Dgtk3=true
-meson build
+meson build --prefix=/usr --libdir=/usr/lib/arm-linux-gnueabihf
 ninja -C build
 ninja -C build install
 ```
