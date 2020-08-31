@@ -31,7 +31,7 @@ namespace AlsaPlugin {
             frame.shadow_type = Gtk.ShadowType.OUT;
             add(frame);
 
-            scale_container = new Gtk.Box(Gtk.Orientation.VERTICAL, 0);
+            scale_container = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 0);
             scale_container.border_width = 2;
             scale_container.button_press_event.connect(() => { return true; });
             frame.add(scale_container);
@@ -55,10 +55,10 @@ namespace AlsaPlugin {
         }
 
         private void setup_scale() {
-            scale = new Gtk.Scale.with_range(Gtk.Orientation.VERTICAL, 0.0, 100.0, plugin.volume_step);
+            scale = new Gtk.Scale.with_range(Gtk.Orientation.HORIZONTAL, 0.0, 100.0, plugin.volume_step);
             scale.draw_value = false;
-            scale.inverted = true;
-            scale.set_size_request(-1, 128);
+            scale.inverted = false;
+            scale.set_size_request(128, -1);
             scale.set_value(alsa.volume);
 
             scale.change_value.connect((scroll, new_value) => {
