@@ -87,7 +87,7 @@ namespace AlsaPlugin {
             set_size_request(size, size);
 
             icon.set_from_icon_name(icon_name, Gtk.IconSize.BUTTON);
-            
+            icon.set_pixel_size(22);
 
             if (alsa.configured) {
                 if (mute) {
