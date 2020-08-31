@@ -1,6 +1,6 @@
 # Changes made to build for Raspberry Pi 4 XFCE4 Panel
 - meson.build: Changed version check for libxfce4panel-2.0
-- volumebutton.vala: removed line 90
+- volumebutton.vala: Set icon size to 22
 - volumepopup.vala: edited to set horizontal
 
 # xfce4-alsa-plugin
