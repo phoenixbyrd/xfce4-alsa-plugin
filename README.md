@@ -1,4 +1,4 @@
-#Changes made to build for Raspberry Pi 4 XFCE4 Panel
+# Changes made to build for Raspberry Pi 4 XFCE4 Panel
 
 # xfce4-alsa-plugin
 Simple ALSA volume control for xfce4-panel
